@@ -27,7 +27,7 @@ namespace ClickHouse.Ado.Impl.ColumnTypes
             Data = new IPAddress[rows];
             for (var i = 0; i < rows; i++)
             {
-                Data[i] = new IPAddress(formatter.ReadBytes(4).Reverse().ToArray());//new IPAddress(formatter.ReadBytes(4).Reverse().ToArray());
+                Data[i] = new IPAddress(formatter.ReadBytes(4).Reverse().ToArray());
             }
         }
 
